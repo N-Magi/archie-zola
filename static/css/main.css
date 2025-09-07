@@ -1,14 +1,15 @@
 /* Markdown */
 :root {
-  --maincolor: red;
+  --maincolor: #E83015/*red*/;
   --bordercl: rebeccapurple;
   --callouctcolor: dodgerblue;
   --hovercolor: navy;
-  --darkMaincolor: #50fa7b;
+  --darkMaincolor: #FFB11B/*#50fa7b*/;
 }
 
 html {
-  color: #232333;
+  color: #1C1C1C;
+  background-color: #FCFAF2;
   font-family: "Roboto Mono", monospace;
   font-size: 15px;
   line-height: 1.6em;
@@ -81,7 +82,7 @@ ul li {
   text-indent: -2ch;
 }
 
-ul > li::before {
+ul>li::before {
   content: "* ";
   font-weight: bold;
 }
@@ -163,7 +164,8 @@ header {
 }
 
 header .main {
-  font-size: 1.5rem;
+  --header-font-size: 2.5rem;
+  font-size: var(--header-font-size);
 }
 
 h1,
@@ -235,6 +237,25 @@ footer {
 
 #main_title {
   margin-bottom: 10px;
+  width: auto;
+  height: var(--header-font-size);
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#main_title > a {
+
+  margin-left: calc(0.15 * var(--header-font-size));
+}
+
+#main_title > img {
+  border: 0;
+  width: auto;
+  height: 100%;
+  margin-bottom: calc(0.1 * var(--header-font-size));
 }
 
 /* Common */
@@ -431,4 +452,16 @@ table td {
   display: flex;
   align-items: center;
   grid-column-gap: 10px;
+}
+
+.wdxl-lubrifont-jp-n-regular {
+  font-family: "WDXL Lubrifont JP N", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dotgothic16-regular {
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
