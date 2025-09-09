@@ -1,8 +1,11 @@
 <header>
-    <div class="main" id="main_title">
-        <img class="site-image" src="/imgs/ringo_red_02.png" alt="知恵の実" />
-        <a href={{ config.base_url }} class="wdxl-lubrifont-jp-n-regular">{{ config.title }}</a>
-    </div>
+    <a a href={{ config.base_url }}>
+        <div class="main" id="main_title">
+            <img id="title_image" src="/imgs/1_2.png" alt="知恵の実" />
+            <img id="title_image_ate" src="/imgs/2_2.png" alt="知恵の実" />
+            <span id="title" class="wdxl-lubrifont-jp-n-regular">{{ config.title }}</span>
+        </div>
+    </a>
 
     <nav>
         {% for menu in config.extra.translations[lang][0].menus %}
