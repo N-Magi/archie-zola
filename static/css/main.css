@@ -5,6 +5,7 @@
   --callouctcolor: dodgerblue;
   --hovercolor: navy;
   --darkMaincolor: #FFB11B/*#50fa7b*/;
+  --pre-bg: #272822;
 }
 
 html {
@@ -127,7 +128,7 @@ code {
 }
 
 pre {
-  background-color: #ececec;
+  background-color: var(--pre-bg, #2d2d2d);
   line-height: 1.4;
   overflow-x: auto;
   padding: 1em;
@@ -271,8 +272,6 @@ img#title_image {
   transition: all 0.5s ease;
 }
 
-
-
 /* Common */
 .title h1 {
   margin-bottom: 0;
@@ -335,7 +334,7 @@ article .title {
   background-color: var(--hovercolor);
 }
 
-svg {
+a#dark-mode-toggle > svg {
   max-height: 15px;
 }
 
