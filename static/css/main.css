@@ -357,6 +357,13 @@ pre {
   -webkit-overflow-scrolling: touch;
 }
 
+
+
+pre code {
+  border-radius: 0 0 0.25rem 0.25rem;
+  color: white;
+}
+
 pre code[class*="language-"] {
   -webkit-overflow-scrolling: touch;
 }
