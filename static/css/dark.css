@@ -91,6 +91,11 @@ a:hover {
     color: black;
 }
 
+span {
+  color: rgb(239, 239, 239);
+}
+
+
 .site-description a {
     color: #ddd;
 }
