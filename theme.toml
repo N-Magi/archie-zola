@@ -14,7 +14,8 @@ demo = "https://archie-zola.netlify.app/"
 [extra]
 mode = "toggle"
 useCDN = false
-favicon = "/icon/favicon.png"
+#favicon = "/icon/favicon.png"
+favicon = "/imgs/1_2.png"
 copyright = ""
 ga = ""
 katex_enable = false
